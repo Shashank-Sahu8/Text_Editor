@@ -313,6 +313,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.grey.shade500,
                             dashPattern: [2, 0, 0, 2],
                             child: Container(
+                              constraints: BoxConstraints(
+                                maxWidth:
+                                    MediaQuery.of(context).size.width - 16.0,
+                              ),
                               color: Colors.grey.shade200,
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
@@ -332,6 +336,10 @@ class _MyHomePageState extends State<MyHomePage> {
                               color: Colors.grey.shade500,
                               dashPattern: [2, 0, 0, 2],
                               child: Container(
+                                constraints: BoxConstraints(
+                                  maxWidth:
+                                      MediaQuery.of(context).size.width - 16.0,
+                                ),
                                 color: Colors.grey.shade200,
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
